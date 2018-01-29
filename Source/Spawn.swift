@@ -8,4 +8,13 @@
 
 import UIKit
 
-
+open class Spawn {
+	
+	private var appid = ""
+	private var token = ""
+	
+	class func with(appid: String, token: String) {
+		
+		
+	}
+}

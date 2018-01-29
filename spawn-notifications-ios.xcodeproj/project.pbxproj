@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4656D87C702BED1E999A4DE0 /* Pods_spawn_notifications_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B97EB825B436DEAF0EA12E /* Pods_spawn_notifications_ios.framework */; };
 		A7E6F1E9201FB36B00C652FC /* spawn_notifications_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7E6F1F0201FB3EE00C652FC /* SpawnNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1EF201FB3EE00C652FC /* SpawnNotifications.swift */; };
+		A7E6F1F0201FB3EE00C652FC /* Spawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1EF201FB3EE00C652FC /* Spawn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +19,7 @@
 		A7E6F1E4201FB36B00C652FC /* spawn_notifications_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = spawn_notifications_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spawn_notifications_ios.h; sourceTree = "<group>"; };
 		A7E6F1E8201FB36B00C652FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7E6F1EF201FB3EE00C652FC /* SpawnNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpawnNotifications.swift; sourceTree = "<group>"; };
+		A7E6F1EF201FB3EE00C652FC /* Spawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spawn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			children = (
 				A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */,
 				A7E6F1E8201FB36B00C652FC /* Info.plist */,
-				A7E6F1EF201FB3EE00C652FC /* SpawnNotifications.swift */,
+				A7E6F1EF201FB3EE00C652FC /* Spawn.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E6F1F0201FB3EE00C652FC /* SpawnNotifications.swift in Sources */,
+				A7E6F1F0201FB3EE00C652FC /* Spawn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
