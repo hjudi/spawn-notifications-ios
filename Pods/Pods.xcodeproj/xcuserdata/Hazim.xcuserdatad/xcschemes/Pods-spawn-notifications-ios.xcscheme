@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3333B6198F6CC17EFA8CD500C9331AB2"
+               BlueprintIdentifier = "D9C381F8A82BCFA3A3DAD14516F40E3A"
                BuildableName = "Pods_spawn_notifications_ios.framework"
                BlueprintName = "Pods-spawn-notifications-ios"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3333B6198F6CC17EFA8CD500C9331AB2"
+            BlueprintIdentifier = "D9C381F8A82BCFA3A3DAD14516F40E3A"
             BuildableName = "Pods_spawn_notifications_ios.framework"
             BlueprintName = "Pods-spawn-notifications-ios"
             ReferencedContainer = "container:Pods.xcodeproj">

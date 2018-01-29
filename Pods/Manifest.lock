@@ -1,25 +1,31 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
   - Alamofire (4.6.0)
-  - Reachability (3.2)
-  - ReachabilitySwift (3)
-  - SwiftMoment (0.5.1)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
+  - SnapKit (4.0.0)
+  - SwiftMoment (0.7)
   - SwiftWebSocket (2.6.5)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `master`)
-  - Reachability
-  - ReachabilitySwift (~> 3)
-  - SwiftMoment
-  - SwiftWebSocket (from `https://github.com/tidwall/SwiftWebSocket.git`, branch `swift/3.0`)
+  - RealmSwift
+  - SnapKit
+  - SwiftMoment (from `https://github.com/akosma/SwiftMoment.git`, branch `master`)
+  - SwiftWebSocket
 
 EXTERNAL SOURCES:
   Alamofire:
     :branch: master
     :git: https://github.com/Alamofire/Alamofire.git
     :submodules: true
-  SwiftWebSocket:
-    :branch: swift/3.0
-    :git: https://github.com/tidwall/SwiftWebSocket.git
+  SwiftMoment:
+    :branch: master
+    :git: https://github.com/akosma/SwiftMoment.git
     :submodules: true
 
 CHECKOUT OPTIONS:
@@ -27,18 +33,20 @@ CHECKOUT OPTIONS:
     :commit: 098a42007eda5d417a41db44fac14abffa55b234
     :git: https://github.com/Alamofire/Alamofire.git
     :submodules: true
-  SwiftWebSocket:
-    :commit: 18a5c8264f8edda89c1b368853c146d464fe3c27
-    :git: https://github.com/tidwall/SwiftWebSocket.git
+  SwiftMoment:
+    :commit: fe37d80ad8cfda2de44356166b39b9e91633cf7b
+    :git: https://github.com/akosma/SwiftMoment.git
     :submodules: true
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   Alamofire: 0dda98a0ed7eec4bdcd5fe3cdd35fcd2b3022825
-  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
-  SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftMoment: dc6dd27012e267819104cbb03f74ff9192dd0b42
   SwiftWebSocket: 1ef8a0efb023544643bdf480c1ec4a62b204f293
 
-PODFILE CHECKSUM: b37609112e9ef9da15ba9139dae348a90cf0fc06
+PODFILE CHECKSUM: 5623c6ae8f9b02784d7c620bbc072378d734c52b
 
 COCOAPODS: 1.1.1

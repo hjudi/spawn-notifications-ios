@@ -10,6 +10,11 @@
 		4656D87C702BED1E999A4DE0 /* Pods_spawn_notifications_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B97EB825B436DEAF0EA12E /* Pods_spawn_notifications_ios.framework */; };
 		A7E6F1E9201FB36B00C652FC /* spawn_notifications_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7E6F1F0201FB3EE00C652FC /* Spawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1EF201FB3EE00C652FC /* Spawn.swift */; };
+		A7E6F1F2201FBD5700C652FC /* SpawnSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F1201FBD5700C652FC /* SpawnSocket.swift */; };
+		A7E6F1F4201FC50E00C652FC /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F3201FC50E00C652FC /* Help.swift */; };
+		A7E6F1F6201FC5AA00C652FC /* SpawnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */; };
+		A7E6F1F9201FC5E100C652FC /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F7201FC5E100C652FC /* KeychainWrapper.swift */; };
+		A7E6F1FA201FC5E100C652FC /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F8201FC5E100C652FC /* KeychainItemAccessibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spawn_notifications_ios.h; sourceTree = "<group>"; };
 		A7E6F1E8201FB36B00C652FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E6F1EF201FB3EE00C652FC /* Spawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spawn.swift; sourceTree = "<group>"; };
+		A7E6F1F1201FBD5700C652FC /* SpawnSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpawnSocket.swift; sourceTree = "<group>"; };
+		A7E6F1F3201FC50E00C652FC /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpawnDevice.swift; sourceTree = "<group>"; };
+		A7E6F1F7201FC5E100C652FC /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		A7E6F1F8201FC5E100C652FC /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +84,12 @@
 			children = (
 				A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */,
 				A7E6F1E8201FB36B00C652FC /* Info.plist */,
+				A7E6F1F3201FC50E00C652FC /* Help.swift */,
 				A7E6F1EF201FB3EE00C652FC /* Spawn.swift */,
+				A7E6F1F1201FBD5700C652FC /* SpawnSocket.swift */,
+				A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */,
+				A7E6F1F8201FC5E100C652FC /* KeychainItemAccessibility.swift */,
+				A7E6F1F7201FC5E100C652FC /* KeychainWrapper.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -194,7 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E6F1F2201FBD5700C652FC /* SpawnSocket.swift in Sources */,
 				A7E6F1F0201FB3EE00C652FC /* Spawn.swift in Sources */,
+				A7E6F1F4201FC50E00C652FC /* Help.swift in Sources */,
+				A7E6F1F6201FC5AA00C652FC /* SpawnDevice.swift in Sources */,
+				A7E6F1F9201FC5E100C652FC /* KeychainWrapper.swift in Sources */,
+				A7E6F1FA201FC5E100C652FC /* KeychainItemAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -304,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -328,6 +348,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.butleredbits.spawn-notifications-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -352,6 +373,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.butleredbits.spawn-notifications-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
