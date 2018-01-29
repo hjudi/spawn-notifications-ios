@@ -15,6 +15,8 @@
 		A7E6F1F6201FC5AA00C652FC /* SpawnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */; };
 		A7E6F1F9201FC5E100C652FC /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F7201FC5E100C652FC /* KeychainWrapper.swift */; };
 		A7E6F1FA201FC5E100C652FC /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F8201FC5E100C652FC /* KeychainItemAccessibility.swift */; };
+		A7E6F1FC201FCED700C652FC /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1FB201FCED700C652FC /* WebSocket.swift */; };
+		A7E6F1FE201FD57600C652FC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E6F1FD201FD57500C652FC /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpawnDevice.swift; sourceTree = "<group>"; };
 		A7E6F1F7201FC5E100C652FC /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		A7E6F1F8201FC5E100C652FC /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		A7E6F1FB201FCED700C652FC /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		A7E6F1FD201FD57500C652FC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E6F1FE201FD57600C652FC /* libz.tbd in Frameworks */,
 				4656D87C702BED1E999A4DE0 /* Pods_spawn_notifications_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +52,7 @@
 		3CC61FDA11C232AD138AB530 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7E6F1FD201FD57500C652FC /* libz.tbd */,
 				33B97EB825B436DEAF0EA12E /* Pods_spawn_notifications_ios.framework */,
 			);
 			name = Frameworks;
@@ -90,6 +96,7 @@
 				A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */,
 				A7E6F1F8201FC5E100C652FC /* KeychainItemAccessibility.swift */,
 				A7E6F1F7201FC5E100C652FC /* KeychainWrapper.swift */,
+				A7E6F1FB201FCED700C652FC /* WebSocket.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -215,6 +222,7 @@
 				A7E6F1F6201FC5AA00C652FC /* SpawnDevice.swift in Sources */,
 				A7E6F1F9201FC5E100C652FC /* KeychainWrapper.swift in Sources */,
 				A7E6F1FA201FC5E100C652FC /* KeychainItemAccessibility.swift in Sources */,
+				A7E6F1FC201FCED700C652FC /* WebSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

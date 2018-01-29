@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftWebSocket
 
 let BaseSocketURLStaging = "ws://localhost:6543/"
 let BaseSocketURLProduction = "ws://52.70.102.69:6543/"

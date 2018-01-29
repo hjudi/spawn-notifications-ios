@@ -8,7 +8,6 @@ PODS:
     - Realm (= 3.0.2)
   - SnapKit (4.0.0)
   - SwiftMoment (0.7)
-  - SwiftWebSocket (2.6.5)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0
@@ -16,7 +15,6 @@ DEPENDENCIES:
   - RealmSwift
   - SnapKit
   - SwiftMoment (from `https://github.com/akosma/SwiftMoment.git`, branch `master`)
-  - SwiftWebSocket
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -45,8 +43,7 @@ SPEC CHECKSUMS:
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftMoment: dc6dd27012e267819104cbb03f74ff9192dd0b42
-  SwiftWebSocket: 1ef8a0efb023544643bdf480c1ec4a62b204f293
 
-PODFILE CHECKSUM: 5623c6ae8f9b02784d7c620bbc072378d734c52b
+PODFILE CHECKSUM: 8b4337b1239917df9013b956ae2f7fe0197be719
 
 COCOAPODS: 1.1.1

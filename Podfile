@@ -12,7 +12,6 @@ target 'spawn-notifications-ios' do
 	pod 'RealmSwift'
 	pod 'SnapKit'
 	pod 'ActionSheetPicker-3.0'
-	pod 'SwiftWebSocket'#, :git => 'https://github.com/tidwall/SwiftWebSocket.git', :branch => 'swift/3.0', :submodules => true
 end
 
 post_install do |installer|
