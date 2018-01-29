@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class Spawn {
+public class Spawn {
 	
 	internal static var isProduction = false
 	internal static var appid = ""
