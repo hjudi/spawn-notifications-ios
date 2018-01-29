@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Reachability (3.2)
+  - ReachabilitySwift (3)
+  - SwiftMoment (0.5.1)
+  - SwiftWebSocket (2.6.5)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `master`)
+  - Reachability
+  - ReachabilitySwift (~> 3)
+  - SwiftMoment
+  - SwiftWebSocket (from `https://github.com/tidwall/SwiftWebSocket.git`, branch `swift/3.0`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: master
+    :git: https://github.com/Alamofire/Alamofire.git
+    :submodules: true
+  SwiftWebSocket:
+    :branch: swift/3.0
+    :git: https://github.com/tidwall/SwiftWebSocket.git
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 098a42007eda5d417a41db44fac14abffa55b234
+    :git: https://github.com/Alamofire/Alamofire.git
+    :submodules: true
+  SwiftWebSocket:
+    :commit: 18a5c8264f8edda89c1b368853c146d464fe3c27
+    :git: https://github.com/tidwall/SwiftWebSocket.git
+    :submodules: true
+
+SPEC CHECKSUMS:
+  Alamofire: 0dda98a0ed7eec4bdcd5fe3cdd35fcd2b3022825
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
+  SwiftWebSocket: 1ef8a0efb023544643bdf480c1ec4a62b204f293
+
+PODFILE CHECKSUM: b37609112e9ef9da15ba9139dae348a90cf0fc06
+
+COCOAPODS: 1.1.1
