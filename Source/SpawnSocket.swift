@@ -151,9 +151,9 @@ class Socket : WebSocket {
 			
 		}) { data, a in
 			
-			if let app = data?.object(forKey: "app") as? NSDictionary {
+			if data?.value(forKey: "success") as? Bool == true {
 				
-				print("\n🔑 Authenticated: \(app)\n")
+				print("\n🔑 Authenticated to spawn with appid \(Spawn.appid)\n")
 				
 				DispatchQueue.main.async(execute: {
 					
@@ -193,6 +193,8 @@ class Socket : WebSocket {
 		Socket.authenticateAndConnect { (error) -> () in
 			
 			if error == nil {
+				
+				Spawn.sendHeader()
 			}
 			else if error == "Timeout" {
 				
@@ -219,11 +221,6 @@ class Socket : WebSocket {
 	}
 	
 	func setup() {
-		
-		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillEnter), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillEnter), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillResign), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillResign), name: NSNotification.Name.UIApplicationWillTerminate, object: nil)
 		
 		self.event.open = {
 			
@@ -312,6 +309,11 @@ class Socket : WebSocket {
 			Socket.shouldAcceptFreshAuth = true
 		}
 		
+		
+		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillEnter), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillEnter), name: NSNotification.Name.UIApplicationDidBecomeActive, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillResign), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(Socket.appWillResign), name: NSNotification.Name.UIApplicationWillTerminate, object: nil)
 	}
 	
 }

@@ -13,4 +13,5 @@ s.tvos.deployment_target = "9.0"
 s.source_files           = "Source/*.swift"
 s.requires_arc           = true
 s.libraries              = 'z'
+s.dependency 'RealmSwift'
 end
