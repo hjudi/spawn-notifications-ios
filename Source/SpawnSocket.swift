@@ -195,6 +195,7 @@ class Socket : WebSocket {
 			if error == nil {
 				
 				Spawn.sendHeader()
+				Spawn.uploadEvents()
 			}
 			else if error == "Timeout" {
 				

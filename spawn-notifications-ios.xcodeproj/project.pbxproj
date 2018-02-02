@@ -10,6 +10,9 @@
 		4656D87C702BED1E999A4DE0 /* Pods_spawn_notifications_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B97EB825B436DEAF0EA12E /* Pods_spawn_notifications_ios.framework */; };
 		A7A56C1920239C240065137A /* slog.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A56C1720239C230065137A /* slog.swift */; };
 		A7A56C1A20239C240065137A /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A56C1820239C240065137A /* RealmConfig.swift */; };
+		A7A56C28202481260065137A /* Crashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A56C27202481260065137A /* Crashes.swift */; };
+		A7A56C2A2024812E0065137A /* TempEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A56C292024812E0065137A /* TempEvent.swift */; };
+		A7A56C2C202481360065137A /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A56C2B202481360065137A /* DeviceType.swift */; };
 		A7E6F1E9201FB36B00C652FC /* spawn_notifications_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7E6F1F0201FB3EE00C652FC /* Spawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1EF201FB3EE00C652FC /* Spawn.swift */; };
 		A7E6F1F2201FBD5700C652FC /* SpawnSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E6F1F1201FBD5700C652FC /* SpawnSocket.swift */; };
@@ -27,6 +30,9 @@
 		7205F8E9A265CDBCB0E22491 /* Pods-spawn-notifications-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spawn-notifications-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spawn-notifications-ios/Pods-spawn-notifications-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		A7A56C1720239C230065137A /* slog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slog.swift; sourceTree = "<group>"; };
 		A7A56C1820239C240065137A /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
+		A7A56C27202481260065137A /* Crashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crashes.swift; sourceTree = "<group>"; };
+		A7A56C292024812E0065137A /* TempEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempEvent.swift; sourceTree = "<group>"; };
+		A7A56C2B202481360065137A /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		A7E6F1E4201FB36B00C652FC /* spawn_notifications_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = spawn_notifications_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E6F1E7201FB36B00C652FC /* spawn_notifications_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spawn_notifications_ios.h; sourceTree = "<group>"; };
 		A7E6F1E8201FB36B00C652FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +102,10 @@
 				A7E6F1E8201FB36B00C652FC /* Info.plist */,
 				A7E6F1F3201FC50E00C652FC /* Help.swift */,
 				A7A56C1820239C240065137A /* RealmConfig.swift */,
+				A7A56C292024812E0065137A /* TempEvent.swift */,
 				A7A56C1720239C230065137A /* slog.swift */,
+				A7A56C27202481260065137A /* Crashes.swift */,
+				A7A56C2B202481360065137A /* DeviceType.swift */,
 				A7E6F1EF201FB3EE00C652FC /* Spawn.swift */,
 				A7E6F1F1201FBD5700C652FC /* SpawnSocket.swift */,
 				A7E6F1F5201FC5AA00C652FC /* SpawnDevice.swift */,
@@ -225,10 +234,13 @@
 				A7E6F1F2201FBD5700C652FC /* SpawnSocket.swift in Sources */,
 				A7E6F1F0201FB3EE00C652FC /* Spawn.swift in Sources */,
 				A7A56C1A20239C240065137A /* RealmConfig.swift in Sources */,
+				A7A56C28202481260065137A /* Crashes.swift in Sources */,
 				A7A56C1920239C240065137A /* slog.swift in Sources */,
+				A7A56C2A2024812E0065137A /* TempEvent.swift in Sources */,
 				A7E6F1F4201FC50E00C652FC /* Help.swift in Sources */,
 				A7E6F1F6201FC5AA00C652FC /* SpawnDevice.swift in Sources */,
 				A7E6F1F9201FC5E100C652FC /* KeychainWrapper.swift in Sources */,
+				A7A56C2C202481360065137A /* DeviceType.swift in Sources */,
 				A7E6F1FA201FC5E100C652FC /* KeychainItemAccessibility.swift in Sources */,
 				A7E6F1FC201FCED700C652FC /* WebSocket.swift in Sources */,
 			);
