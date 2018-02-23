@@ -58,11 +58,11 @@ public class Spawn : NSObject, CrashEyeDelegate {
 		if slug == "crash" {
 			
 			let dateFormatter = DateFormatter()
-			dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+			//dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 			
 			let eventObjects = [["slug": slug, "body": bodyString, "happenedAt": dateFormatter.string(from:  Date())]] as [[String: Any]]
 			
-			socket.send(withHead: "event/log", andData: ["credentials": Spawn.getCredentials() ?? [:], "events": eventObjects], timeout: 0, timeoutBlock: nil) { (data, ack) in
+			socket.send(withHead: "analytics/log", andData: ["credentials": Spawn.getCredentials() ?? [:], "events": eventObjects], timeout: 0, timeoutBlock: nil) { (data, ack) in
 				
 				if data?.value(forKey: "success") as? Bool == true {
 					
@@ -96,14 +96,14 @@ public class Spawn : NSObject, CrashEyeDelegate {
 		}
 		
 		let dateFormatter = DateFormatter()
-		dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+		//dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 		
 		let r = try! Realm()
 		r.refresh()
 		let events = Array(r.objects(TempEvent.self))
 		let eventObjects = events.map({ return ["slug": $0.slug, "body": $0.body, "happenedAt": dateFormatter.string(from:  $0.happenedAt)] }) as [[String: Any]]
 		
-		socket.send(withHead: "event/log", andData: ["credentials": Spawn.getCredentials() ?? [:], "events": eventObjects], timeout: 0, timeoutBlock: nil) { (data, ack) in
+		socket.send(withHead: "analytics/log", andData: ["credentials": Spawn.getCredentials() ?? [:], "events": eventObjects], timeout: 0, timeoutBlock: nil) { (data, ack) in
 			
 			if data?.value(forKey: "success") as? Bool == true {
 				
